@@ -24,11 +24,13 @@
     --light-blue-400: #AAB2D5;
     --light-blue-500: #757FB2;
     /* Gray */
+    --gray-0: #FFFFFF;
     --gray-100: #CED4DA;
     --gray-200: #ADB5BD;
     --gray-300: #868E96;
     --gray-400: #495057;
     --gray-500: #343A40;
+
 
   /* Otros */
 }

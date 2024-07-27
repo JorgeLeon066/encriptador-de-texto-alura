@@ -3,3 +3,46 @@
 /* Variables */
 @import url("./variables.css");
 
+/* Estilos */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--inter-font-family);
+}
+body {
+  background-color: var(--light-blue-100)
+}
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-input-section__condition {
+  font-size: var(--font-size-12);
+  color: var(--gray-400);
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.text-input-section__actions .back-001 {
+  background-color: var(--dark-blue-300);
+  color: var(--gray-0);
+}
+
+.text-input-section__actions .back-002 {
+  background-color: transparent;
+  color: var(--dark-blue-300);
+}
+
+.text-input-section__button{
+  font-size: var(--font-size-16);
+  border: 1px solid var(--dark-blue-300) ;
+  border-radius: 24px;
+  padding: 18px 100px;
+}
+
+
+
+
