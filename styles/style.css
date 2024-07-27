@@ -11,19 +11,50 @@
   font-family: var(--inter-font-family);
 }
 body {
-  background-color: var(--light-blue-100)
+  background-color: var(--light-blue-100);
 }
+.header {
+  height: 40px;
+}
+
+.header-logo {
+  margin: 40px;
+}
+
 .main-content {
   display: flex;
+  justify-content: flex-end;
+  padding: 40px;
+}
+
+.text-input-section {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
+}
+
+.text-input-section__textarea {
+  color: var(--dark-blue-300);
+  font-size: var(--font-size-32);
+  background-color: transparent;
+  margin-top: 128px;
+  width: 680px;
+  height: 288px;
+  border: none;
+  outline: none;
+}
+
+.text-input-section__actions {
+  padding: 32px;
 }
 
 .text-input-section__condition {
   font-size: var(--font-size-12);
   color: var(--gray-400);
   display: flex;
-  justify-content: center;
   gap: 8px;
+  padding: 16px;
+  
 }
 
 .text-input-section__actions .back-001 {
@@ -43,6 +74,29 @@ body {
   padding: 18px 100px;
 }
 
+.text-output-section {
+  background-color: var(--gray-0);
+  padding: 0 32px;
+  border-radius: 32px;
+  height: 944px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
 
+.text-output-section__warning-message {
+  font-size: var(--font-size-24);
+  font-weight: 600;
+}
 
+.text-output-section__info-message {
+  font-size: var(--font-size-16);
+}
+
+/* Pseudo-Clases */
+.text-input-section__textarea::placeholder{
+  color: var(--dark-blue-300);
+  font-size: var(--font-size-32);
+}
 

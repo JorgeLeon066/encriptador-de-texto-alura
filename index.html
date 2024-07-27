@@ -9,16 +9,18 @@
 </head>
 
 <body>
+  <header class="header">
+    <img src="./assets/Vector.svg" alt="Logo de Alura Latam" class="header-logo">
+  </header>
   <main class="main-content">
+    
     <section class="text-input-section">
-      <img src="./assets/Vector.svg" alt="Logo de Alura Latam" class="text-input-section__logo">
-      <textarea class="text-input-section__textarea" name="decrypt-text"
-        id="text-input">Ingrese el texto aquí</textarea>
-      <p class="text-input-section__condition">
-        <img class="text-input-section__condition-icon" src="./assets/bi_exclamation-circle-fill.svg" alt="Advertencia">
-        Solo letras minúsculas y sin acentos
-      </p>
+      <textarea class="text-input-section__textarea" name="decrypt-text" id="text-input" placeholder="Ingrese el texto aqui"></textarea>
+
       <div class="text-input-section__actions">
+        <p class="text-input-section__condition">
+          <img class="text-input-section__condition-icon" src="./assets/bi_exclamation-circle-fill.svg" alt="Advertencia">Solo letras minúsculas y sin acentos
+        </p>
         <button class="text-input-section__button back-001">Encriptar</button>
         <button class="text-input-section__button back-002">Desencriptar</button>
       </div>
