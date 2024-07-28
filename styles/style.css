@@ -23,8 +23,9 @@ body {
 
 .main-content {
   display: flex;
-  justify-content: flex-end;
-  padding: 40px;
+  justify-content: center;
+  gap: 50px;
+  margin: 40px;
 }
 
 .text-input-section {
@@ -38,8 +39,8 @@ body {
   font-size: var(--font-size-32);
   background-color: transparent;
   margin-top: 128px;
-  width: 680px;
-  height: 288px;
+  /* width: 680px;
+  height: 288px; */
   border: none;
   outline: none;
 }
@@ -67,6 +68,11 @@ body {
   color: var(--dark-blue-300);
 }
 
+.text-input-section__buttons {
+  display: flex;
+  gap: 24px;
+}
+
 .text-input-section__button{
   font-size: var(--font-size-16);
   border: 1px solid var(--dark-blue-300) ;
@@ -86,12 +92,14 @@ body {
 }
 
 .text-output-section__warning-message {
+  text-align: center;
   font-size: var(--font-size-24);
   font-weight: 600;
 }
 
 .text-output-section__info-message {
   font-size: var(--font-size-16);
+  text-align: center;
 }
 
 /* Pseudo-Clases */
