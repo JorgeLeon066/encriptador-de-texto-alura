@@ -5,48 +5,34 @@
 
 /* Estilos */
 *{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  background: var(--light-blue-100);
   font-family: var(--inter-font-family);
-}
-body {
-  background-color: var(--light-blue-100);
-}
-.header {
-  height: 40px;
+  font-size: var(--font-size-32);
+  line-height: 150%;
+  font-weight: 400;
 }
 
 .header-logo {
-  margin: 40px;
+  padding-top: 10px;
+  margin-left: 10px;
+  width: 2%;
 }
 
 .main-content {
   display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin: 40px;
+  justify-content: space-between;
+  padding: 0 40px;
 }
 
 .text-input-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding-left: 30px;
 }
 
 .text-input-section__textarea {
-  color: var(--dark-blue-300);
-  font-size: var(--font-size-32);
-  background-color: transparent;
-  margin-top: 128px;
-  /* width: 680px;
-  height: 288px; */
   border: none;
-  outline: none;
-}
-
-.text-input-section__actions {
-  padding: 32px;
+  color: var(--dark-blue-300);
+  margin-top: 40px;
+  text-transform: lowercase;
 }
 
 .text-input-section__condition {
@@ -54,8 +40,21 @@ body {
   color: var(--gray-400);
   display: flex;
   gap: 8px;
-  padding: 16px;
-  
+}
+
+.text-input-section__buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.text-input-section__button{
+  font-size: var(--font-size-16);
+  border: 1px solid var(--dark-blue-300) ;
+  border-radius: 24px;
+  height: 67px;
+  width: 328px;
+  cursor: pointer;
 }
 
 .text-input-section__actions .back-001 {
@@ -64,47 +63,44 @@ body {
 }
 
 .text-input-section__actions .back-002 {
-  background-color: transparent;
   color: var(--dark-blue-300);
-}
-
-.text-input-section__buttons {
-  display: flex;
-  gap: 24px;
-}
-
-.text-input-section__button{
-  font-size: var(--font-size-16);
-  border: 1px solid var(--dark-blue-300) ;
-  border-radius: 24px;
-  padding: 18px 100px;
 }
 
 .text-output-section {
-  background-color: var(--gray-0);
-  padding: 0 32px;
-  border-radius: 32px;
-  height: 944px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 32px;
 }
 
-.text-output-section__warning-message {
-  text-align: center;
-  font-size: var(--font-size-24);
-  font-weight: 600;
+.text-output-section__textarea {
+  background: var(--gray-0);
+  background-image: url("../assets/Muñeco.svg");
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 24px;
+  color: var(--dark-blue-300);
+  padding-left: 20px;
 }
 
-.text-output-section__info-message {
-  font-size: var(--font-size-16);
-  text-align: center;
+.text-output-section__button-copy{
+  border: 1px solid var(--dark-blue-300);
+  border-radius: 24px;
+  color: var(--dark-blue-300);
+  cursor: pointer;
+  height: 68px;
+  width: 336px;
+  margin-top: 20px;
 }
 
 /* Pseudo-Clases */
-.text-input-section__textarea::placeholder{
+.text-input-section__textarea::placeholder {
   color: var(--dark-blue-300);
-  font-size: var(--font-size-32);
 }
 
+.text-input-section__textarea:focus {
+  outline: none;
+}
+
+.text-output-section__textarea:focus {
+  outline: none;
+}

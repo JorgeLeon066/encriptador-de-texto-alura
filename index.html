@@ -9,16 +9,12 @@
 </head>
 
 <body>
-  <!-- <header class="header">
-  </header> -->
+  <header class="header">
+    <img src="./assets/Vector.svg" alt="Logo de Alura Latam" class="header-logo">
+  </header>
   <main class="main-content">
-    <div class="logo">
-      <img src="./assets/Vector.svg" alt="Logo de Alura Latam" class="logo-app">
-    </div>
-
     <section class="text-input-section">
-      <textarea class="text-input-section__textarea" name="decrypt-text" id="textarea-input" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-
+      <textarea class="text-input-section__textarea" name="decrypt-text" id="textarea-input" cols="30" rows="8" placeholder="ingrese el texto aqui"></textarea>
       <div class="text-input-section__actions">
         <p class="text-input-section__condition">
           <img class="text-input-section__condition-icon" src="./assets/bi_exclamation-circle-fill.svg" alt="Advertencia">Solo letras minúsculas y sin acentos
@@ -31,12 +27,8 @@
     </section>
 
     <section class="text-output-section">
-      <div class="text-output-section__message" id="message-none">
-        <img class="text-output-section__placeholder-image" src="./assets/Muñeco.svg" alt="No hay mensaje">
-        <h2 class="text-output-section__warning-message">Ningún mensaje fue encontrado</h2>
-        <p class="text-output-section__info-message">Ingresa el texto que desees encriptar o desencriptar.</p>
-      </div>
-      <p class="text-output-section__message-crypt" id="output-message"></p>
+      <textarea class="text-output-section__textarea" cols="20" rows="10" name="message-output" id="textarea-output"></textarea>
+      <button class="text-output-section__button-copy" id="copy-output">Copiar</button>
     </section>
   </main>
   <script src="./javascript/index.js"></script>
