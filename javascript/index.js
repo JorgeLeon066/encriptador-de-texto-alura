@@ -3,6 +3,8 @@ const outputText = document.getElementById("textarea-output");
 
 const send = (txt) => {
   txt = txt.toLowerCase();
+  
+  outputText.style.backgroundImage = "none";
   outputText.value = txt;  // Usar .value en lugar de .innerText
 }
 
