@@ -15,17 +15,20 @@
 .header-logo {
   padding-top: 10px;
   margin-left: 10px;
-  width: 2%;
+  width: 2.2%;
 }
 
 .main-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 40px;
 }
 
+/* Entrada de Texto */
+
 .text-input-section {
   padding-left: 30px;
+  padding-bottom: 20px;
 }
 
 .text-input-section__textarea {
@@ -36,7 +39,7 @@
 }
 
 .text-input-section__condition {
-  font-size: var(--font-size-12);
+  font-size: var(--font-size-16);
   color: var(--gray-400);
   display: flex;
   gap: 8px;
@@ -52,8 +55,8 @@
   font-size: var(--font-size-16);
   border: 1px solid var(--dark-blue-300) ;
   border-radius: 24px;
-  height: 67px;
-  width: 328px;
+  height: 50px;
+  width: 200px;
   cursor: pointer;
 }
 
@@ -66,30 +69,37 @@
   color: var(--dark-blue-300);
 }
 
+/* Salida de texto */
+
 .text-output-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--gray-0);
+  border-radius: 32px;
+  padding: 20px;
 }
 
 .text-output-section__textarea {
-  background: var(--gray-0);
+  background-color: transparent;
   background-image: url("../assets/Muñeco.svg");
+  background-position: center;
   background-repeat: no-repeat;
   border: none;
-  border-radius: 24px;
-  color: var(--dark-blue-300);
-  padding-left: 20px;
+  color: var(--gray-400);
+  font-size: var(--font-size-24);
 }
 
 .text-output-section__button-copy{
   border: 1px solid var(--dark-blue-300);
   border-radius: 24px;
+  font-size: var(--font-size-16);
   color: var(--dark-blue-300);
+  background-color: var(--gray-0);
   cursor: pointer;
-  height: 68px;
-  width: 336px;
-  margin-top: 20px;
+  height: 50px;
+  width: 200px;
 }
 
 /* Pseudo-Clases */
