@@ -3,7 +3,7 @@
 /* Variables */
 @import url("./variables.css");
 
-/* Estilos */
+/* Estilos Generales */
 *{
   background: var(--light-blue-100);
   font-family: var(--inter-font-family);
@@ -12,20 +12,21 @@
   font-weight: 400;
 }
 
+/* Inicio estilidado Header */
 .header-logo {
   padding-top: 10px;
   margin-left: 10px;
   width: 2.2%;
 }
 
+/* Inicio estilizado Contenido Principal */
 .main-content {
   display: flex;
   justify-content: space-around;
   padding: 0 40px;
 }
 
-/* Entrada de Texto */
-
+  /* Estilizado de Entrada de Texto y sus Botones */
 .text-input-section {
   padding-left: 30px;
   padding-bottom: 20px;
@@ -69,8 +70,7 @@
   color: var(--dark-blue-300);
 }
 
-/* Salida de texto */
-
+/* Estilizado de Salida del Texto y su Boton */
 .text-output-section {
   display: flex;
   flex-direction: column;
@@ -102,7 +102,11 @@
   width: 200px;
 }
 
+
 /* Pseudo-Clases */
+
+  /* Estilizado del Contenido Principal */
+    /* Area de Entrada de Texto */
 .text-input-section__textarea::placeholder {
   color: var(--dark-blue-300);
 }
@@ -111,6 +115,7 @@
   outline: none;
 }
 
+    /*Area de Salida de Texto */
 .text-output-section__textarea:focus {
   outline: none;
 }

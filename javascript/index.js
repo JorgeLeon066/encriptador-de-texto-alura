@@ -1,6 +1,8 @@
 const inputText = document.getElementById("textarea-input");
 const outputText = document.getElementById("textarea-output");
 
+// Funciones Complementarias
+
 const send = (txt) => {
   txt = txt.toLowerCase();
   
@@ -30,6 +32,8 @@ const crypt = (type, txtEdit) => {
   const sendMessage = type === "encrypt" ? encrypt(txtEdit) : decrypt(txtEdit);
   send(sendMessage);
 }
+
+// Principales funciones
 
 function starEncrypt() {
   crypt("encrypt", inputText.value);
