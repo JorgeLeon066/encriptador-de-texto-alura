@@ -83,9 +83,7 @@
 
 .text-output-section__textarea {
   background-color: transparent;
-  background-image: url("../assets/Muñeco.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("../assets/Muñeco.svg") no-repeat 10px center;
   border: none;
   color: var(--gray-400);
   font-size: var(--font-size-24);
@@ -116,6 +114,10 @@
 }
 
     /*Area de Salida de Texto */
+.text-output-section__textarea::placeholder {
+  color: var(--gray-400);
+}
+
 .text-output-section__textarea:focus {
   outline: none;
 }
