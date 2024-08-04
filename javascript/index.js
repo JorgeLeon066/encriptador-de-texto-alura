@@ -29,10 +29,16 @@ const sendAlert = (ult) => {
   inputText.setAttribute("maxlength", `${ult}`);
 };
 
+const styleOutput = () => {
+  message_notice.style.display = "none";
+  textarea_copy.style.display = "flex";
+  textarea_copy.style.flexDirection = "column";
+  textarea_copy.style.alignItems = "center"
+}
+
 const send = (txt) => {
   txt = txt.toLowerCase();
-
-  outputText.style.backgroundImage = "none";
+  styleOutput()
   outputText.value = txt;  // Usar .value en lugar de .innerText
 };
 
@@ -92,3 +98,7 @@ inputText.addEventListener("input", inputCheck);
 
 // Otros
 const outputText = document.getElementById("textarea-output");
+
+const textarea_copy = document.getElementById("textarea-copy");
+
+const message_notice = document.getElementById("message-notice")
